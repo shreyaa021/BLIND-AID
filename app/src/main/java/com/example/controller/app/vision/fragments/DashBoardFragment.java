@@ -1,4 +1,4 @@
-package com.example.controller.app.vision.fragments;
+ package com.example.controller.app.vision.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -23,6 +23,8 @@ public class DashBoardFragment extends BaseFragment {
     private TextView tvDiary;
     private TextView btn_ocr;
     private TextView str_settings;
+    private TextView btn_email;
+    private TextView btn_currency;
 
     boolean b = Preference.getInstance().getData(Preference.CALL_IS_FIRST_TIME, true);
 
@@ -48,6 +50,18 @@ public class DashBoardFragment extends BaseFragment {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 fragmentAppDemo.startActivity(intent);
             }
+            if (v.getId() == btn_email.getId()) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setClassName("com.selimkilicaslan.e_mailappforvisuallyimpaired", "com.selimkilicaslan.e_mailappforvisuallyimpaired.LoginActivity");
+                startActivity(intent);
+
+            }
+            if (v.getId() == btn_currency.getId()) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setClassName("org.tensorflow.lite.examples.classification", "org.tensorflow.lite.examples.classification.ClassifierActivity");
+                startActivity(intent);
+
+            }
             if (v.getId() == str_settings.getId()) {
                 // Log.d(TAG, LogUtil.prependCallLocation("onSingleclick: OCR button"));
                 // launch Ocr capture activity.
@@ -58,19 +72,29 @@ public class DashBoardFragment extends BaseFragment {
         }
         @Override
         public void onDoubleClick(View v)
-            {
+        {
             if (v.getId() == tvMessage.getId()) {
                 fragmentAppDemo.speakerbox.play("Message");
                 Log.d("TAG", "Message taped");
             }  if (v.getId() == tvDiary.getId())
-            {
-                fragmentAppDemo.speakerbox.play("Diary");
-                Log.d("TAG", "Diary Tapped");
+        {
+            fragmentAppDemo.speakerbox.play("Diary");
+            Log.d("TAG", "Diary Tapped");
 
-            }
+        }
             if (v.getId() == btn_ocr.getId()) {
                 fragmentAppDemo.speakerbox.play("OCR");
                 Log.d("TAG", "OCR tapped");
+
+            }
+            if (v.getId() == btn_email.getId()) {
+                fragmentAppDemo.speakerbox.play("Email");
+                Log.d("TAG", "Email tapped");
+
+            }
+            if (v.getId() == btn_currency.getId()) {
+                fragmentAppDemo.speakerbox.play("Currency");
+                Log.d("TAG", "Currency tapped");
 
             }
             if (v.getId() == str_settings.getId()) {
@@ -105,12 +129,16 @@ public class DashBoardFragment extends BaseFragment {
 
         tvDiary = view.findViewById(R.id.tvdairy);
         btn_ocr = view.findViewById(R.id.btn_ocr);
+        btn_email = view.findViewById(R.id.btn_email);
+        btn_currency = view.findViewById(R.id.btn_currency);
         str_settings = view.findViewById(R.id.str_settings);
 
         tvMessage.setOnClickListener(doubleClick);
 
         tvDiary.setOnClickListener(doubleClick);
         btn_ocr.setOnClickListener(doubleClick);
+        btn_email.setOnClickListener(doubleClick);
+        btn_currency.setOnClickListener(doubleClick);
         str_settings.setOnClickListener(doubleClick);
 
 

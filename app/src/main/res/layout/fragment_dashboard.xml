@@ -64,7 +64,7 @@
             <TextView
                 android:id="@+id/tvmessage"
                 style="@style/StyleTvDashboard"
-                android:text="@string/message"
+                android:text="@string/mess"
                 />
 
 
@@ -73,7 +73,7 @@
             <TextView
                 android:id="@+id/tvdairy"
                 style="@style/StyleTvDashboard"
-                android:text="@string/diary" />
+                android:text="@string/diar" />
 
 
         </LinearLayout>
@@ -88,19 +88,39 @@
                 android:id="@+id/btn_ocr"
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
-                android:text="@string/str_ocr" />
+                android:text="@string/ocr" />
 
 
             <Button
-                android:id="@+id/str_settings"
+                android:id="@+id/btn_currency"
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
-                android:text="@string/str_settings" />
+
+
+                android:text="@string/cur" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_email"
+                style="@style/StyleTvDashboard"
+                android:layout_width="220dp"
+                android:layout_height="198dp"
+
+                android:text="@string/email" />
+
+            <Button
+                android:id="@+id/str_settings"
+                style="@style/StyleTvDashboard"
+                android:layout_width="220dp"
+                android:layout_height="198dp"
+                android:text="@string/settings" />
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

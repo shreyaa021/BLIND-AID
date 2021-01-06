@@ -18,18 +18,18 @@
 <!-- For color names, see http://en.wikipedia.org/wiki/HTML_color_names -->
 
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="text_color">@android:color/white</color>
-    <color name="bg_color">@android:color/black</color>
+    <color name="colorPrimary">#D54D6E</color>
+    <color name="colorPrimaryDark">#B8304F</color>
+    <color name="colorAccent">#009688</color>
+    <color name="text_color">@color/darkColorPrimaryDark</color>
+    <color name="bg_color">@color/white</color>
     <!-- app/src/main/res/values/colors.xml -->
     <color name="darkColorPrimary">#1e2756</color>
     <color name="darkColorPrimaryDark">@android:color/black</color>
-    <color name="darkColorAccent">#2aac4b</color>
+    <color name="darkColorAccent">#9C254E</color>
     <color name="white">#F5EEEE</color>
     <color name="grey">#51161616</color>
-    <color name="lightBlue">#88A0CBD1</color>
+    <color name="lightBlue">#9C254E</color>
     <color name="textColor">#0F0F0F</color>
     <color name="semi_transparent">#66000000</color>
 

@@ -7,10 +7,13 @@
     ]>
 <resources>
 
-    <string name="str_ocr">ocr</string>
-    <string name="str_cur">Currency</string>
-    <string name="str_currency">&curr;</string>
-    <string name="str_settings">Settings</string>
+    <string name="ocr"><b>ocr</b></string>
+    <string name="email"><b>Email</b></string>
+    <string name="cur"><b>Currency</b></string>
+    <string name="diar"><b>DIARY</b></string>
+    <string name="mess"><b>MESSAGE</b></string>
+
+    <string name="settings"><b>Settings</b></string>
     <string name="str_translate">&trans;</string>
     <string name="str_help">Help</string>
     <string name="ok">OK</string>
@@ -103,8 +106,7 @@
                     Tap once to read.
                     Tap twice to speak.
                   </string>
-    <string name="message">Message</string>
-    <string name="diary">Diary</string>
+
     <string name="request_permission">This app needs camera permission.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
     <string name="toggle_turn_on">NN:On</string>
