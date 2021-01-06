@@ -14,7 +14,8 @@
         app:tabMode="fixed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#096891"
+        android:textColor="@color/white"
         />
 
     <android.support.v4.view.ViewPager
@@ -23,7 +24,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/tab_layout"
         android:layout_centerInParent="true"
-
+        android:background="@color/darkColorPrimaryDark"
        />
 
     </LinearLayout>

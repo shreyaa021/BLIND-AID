@@ -8,6 +8,11 @@
         layout="@layout/actionbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/darkColorPrimaryDark"
+      >
 
     <!--<LinearLayout-->
     <!--android:layout_width="match_parent"-->
@@ -64,6 +69,8 @@
             <TextView
                 android:id="@+id/tvmessage"
                 style="@style/StyleTvDashboard"
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/mess"
                 />
 
@@ -73,6 +80,8 @@
             <TextView
                 android:id="@+id/tvdairy"
                 style="@style/StyleTvDashboard"
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/diar" />
 
 
@@ -88,6 +97,8 @@
                 android:id="@+id/btn_ocr"
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/ocr" />
 
 
@@ -96,7 +107,8 @@
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
 
-
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/cur" />
 
         </LinearLayout>
@@ -110,17 +122,21 @@
                 android:id="@+id/btn_email"
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
-                android:layout_height="198dp"
-
+                android:layout_height="212dp"
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/email" />
 
             <Button
                 android:id="@+id/str_settings"
                 style="@style/StyleTvDashboard"
                 android:layout_width="220dp"
-                android:layout_height="198dp"
+                android:layout_height="212dp"
+                android:textColor="#FF227397"
+                android:textSize="@dimen/_22sdp"
                 android:text="@string/settings" />
 
         </LinearLayout>
     </LinearLayout>
+   </LinearLayout>
 </LinearLayout>

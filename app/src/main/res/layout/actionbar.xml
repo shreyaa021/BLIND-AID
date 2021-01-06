@@ -8,7 +8,10 @@
         android:id="@+id/title"
         style="@style/StyleActionbar"
         android:text="Home"
+        android:textSize="@dimen/_17sdp"
         android:background="@color/colorPrimaryDark"
         android:layout_marginLeft="20sp"/>
+
+
 
 </LinearLayout>
